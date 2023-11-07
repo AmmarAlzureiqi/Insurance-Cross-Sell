@@ -70,8 +70,3 @@ SMOTE can achieve better classifier performance (in ROC space) than only under-s
 
 This dataset is strongly unbalanced and one can easily obtain a wrong accuracy of 0.88, which is the proportion of the response 0. We used some resampling methods to obtain a balanced dataset to train our models. And the best model we found was kNN with undersampling data, whose sensitivity, specificity, and accuracy are all high, but this method is relatively slow in the running speed.
 
-The decision tree model with undersampling data has also got similarly good results as the kNN model, and the tree model is simple, intuitively. Only the customers who have not previously insured, and have got vehicle damages, and whose ages are larger than 26.5 are predicted to have an interest in this new insurance. These conditions are the conditions of the third terminal of the tree. Figure 7 shows that, in the balanced dataset, the tree model fits very well. Most of the responses in terminal 3 are 1, and most of the responses not in terminal 3 are 0. But the separation is not good enough when it comes to the whole dataset.
-
-
-
-
