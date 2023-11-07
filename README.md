@@ -66,7 +66,17 @@ SMOTE can achieve better classifier performance (in ROC space) than only under-s
 
 ### Results and Analysis are displayed in PDF file
 
+## Conclusion
 
+This dataset is strongly unbalanced and one can easily obtain a wrong accuracy of 0.88, which is the proportion of the response 0. We used some resampling methods to obtain a balanced dataset to train our models. And the best model we found was kNN with undersampling data, whose sensitivity, specificity, and accuracy are all high, but this method is relatively slow in the running speed.
+
+The decision tree model with undersampling data has also got similarly good results as the kNN model, and the tree model is simple, intuitively. Only the customers who have not previously insured, and have got vehicle damages, and whose ages are larger than 26.5 are predicted to have an interest in this new insurance. These conditions are the conditions of the third terminal of the tree. Figure 7 shows that, in the balanced dataset, the tree model fits very well. Most of the responses in terminal 3 are 1, and most of the responses not in terminal 3 are 0. But the separation is not good enough when it comes to the whole dataset.
+
+## Possible Further Work
+
+In the kNN part, we didnʼt use cross validation to select k for the long running time. We would be more likely to finish the CV process if we have got an idle computer. Because running the CV means we cannot use the Rstudio for at least a whole day, if we can obtain the correct final results by only once running and we use 10 fold CV. We could have also used CSL (Cost Sensitive Learning) to resample the data based on the cost matrix, which is basically a confusion matrix that focuses more on the false positives and negatives.
+
+We have seen, on the kaggle site, thereʼs someone obtaining an accuracy of 0.91 with python codes, using a very new method called XGBoost (eXtreme Gradient Boosting). This method is from machine learning and was created by Tianqi Chen in 2014. We have had a quick look at this method and tried it in R. The method ended a er 2000 iterations, but our result (sens =0.92, spe = 0.65, accu = 0.68, running time around 2 hours) is not as good as the 0.91 result. It is possibly because we donʼt really understand this method so there have been some attributives wrong. If we want to dig on this data further, we may need to learn about the XGBoost method.
 
 
 
