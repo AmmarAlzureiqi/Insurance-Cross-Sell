@@ -18,10 +18,10 @@ The dataset is available on Kaggle, provided by one whose client is an Insurance
 The dataset called train.csv includes the following 12 variables:
 
 <p align="center">
-<img src='https://github.com/AmmarAlzureiqi/Insurance-Cross-Sell-ML/assets/100096699/84bac6e7-8f52-4c6f-9168-ad1d411b72f9' width='150' height='200'>
+<img src='https://github.com/AmmarAlzureiqi/Insurance-Cross-Sell-ML/assets/100096699/84bac6e7-8f52-4c6f-9168-ad1d411b72f9' width='100%' height='200'>
 </p>
 <p align="center">
-<img src='https://github.com/AmmarAlzureiqi/Insurance-Cross-Sell-ML/assets/100096699/104ea7b2-1e4d-4eea-9813-d43f5d4ba2ad' width='150' height='200'>
+<img src='https://github.com/AmmarAlzureiqi/Insurance-Cross-Sell-ML/assets/100096699/104ea7b2-1e4d-4eea-9813-d43f5d4ba2ad' width='100%' height='200'>
 </p>
 
 
